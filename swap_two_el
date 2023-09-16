@@ -1,0 +1,22 @@
+
+def swapElements(list,pos1,pos2):
+    try:
+        if pos1!=pos2:
+            list[pos1],list[pos2]=list[pos2],list[pos1]
+        else:
+            print("positions cannot be the same")
+    except IndexError:
+        print("index out of range!!!!")
+    return list
+
+list=[11,23,45,67,42,22,45]
+
+
+print("Enter the first position:")
+pos1 = int(input())
+
+print("Enter the second position:")
+pos2 = int(input())
+
+
+print(swapElements(list,pos1,pos2))
