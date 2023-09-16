@@ -1,0 +1,56 @@
+#a program to clear a list in different ways
+
+#1st way of clearing a list
+list=[2,56,3,6,24,67]
+
+print("before the list is cleared: ",list)
+list.clear()
+print("after list is cleared: ",list)
+
+
+
+#2nd way of clearing a list
+list1=[5,78,9,67,56,45,3,2]
+print("before the list is cleared: "+str(list1))
+list1=[]
+print("after the list is cleared: "+str(list1))
+
+
+
+#3rd way of clearing a list
+list2=[546,75,33,22,64,78,8]
+print("before the list is cleared: ",list2)
+
+list2*=0
+print("after the list is cleared: "+str(list2))
+
+
+
+#4th way of clearing a list
+list3=[7,86,89,89,65,44,35,245,31]
+print("before the list is cleared: "+str(list3))
+
+del list3[:]
+print("after the list is cleared: ",list3)
+
+
+
+# 5th way of clearing a list
+list4=[65,4,353,67,9,757,32,43]
+print("before the list is cleared: "+str(list4))
+
+while (len(list4)!=0):
+    list4.pop()
+
+print("after the lsit is cleared: ",list4)
+
+
+
+
+#6th way of clearing a list
+list5=[435,35,242,11,67]
+print("before the list is cleared: "+str(list5))
+
+#after slicing it is required to assign
+list5=list5[:0]                      
+print("after the list is cleared: ",list5)
