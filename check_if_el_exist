@@ -1,0 +1,15 @@
+# a program to check if the element entered by user exists
+
+list=[1,232,5,66,44,32,675,35,4]
+
+try:
+    print("please enter the element: ")
+    is_exist=int(input())
+
+    if is_exist in list:
+        print("exist")
+    else:
+        print("not exist try again")
+# It controls if user enters an invalid kind of value
+except ValueError:
+    print("please enter a valid input.")
